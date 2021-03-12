@@ -1,0 +1,7 @@
+{
+  "name": "todays24",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
