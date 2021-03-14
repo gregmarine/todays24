@@ -6,13 +6,13 @@ describe("todays-service hook", () => {
   const { addContext, getContext, removeContext, updateContext } = useTodays();
   let context: Context = {
     _id: "",
-    _rev: ""
+    _rev: "",
   };
 
   it("adds new context", async () => {
     contextId = await addContext("Test Context");
     context = await getContext(contextId);
-    
+
     expect(context.name).toMatch(`Test Context`);
   });
 
@@ -20,7 +20,7 @@ describe("todays-service hook", () => {
     context.name = "New Name";
     updateContext(context);
     context = await getContext(contextId);
-    
+
     expect(context.name).toMatch(`New Name`);
   });
 
