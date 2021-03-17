@@ -11,6 +11,11 @@
           <ion-title size="large">Contexts</ion-title>
         </ion-toolbar>
       </ion-header>
+
+      <ion-item>
+        <ion-label position="floating">Context Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
     </ion-content>
   </ion-page>
 </template>
@@ -19,6 +24,9 @@
 import {
   IonPage,
   IonHeader,
+  IonItem,
+  IonInput,
+  IonLabel,
   IonToolbar,
   IonTitle,
   IonContent,
@@ -26,6 +34,6 @@ import {
 
 export default {
   name: "Contexts",
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: { IonHeader, IonItem, IonInput, IonLabel, IonToolbar, IonTitle, IonContent, IonPage },
 };
 </script>
